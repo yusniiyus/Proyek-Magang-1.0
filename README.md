@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="screenshots/logo_dinsos_2.png" alt="Logo Dinsos" width="600">
+<img src="public/screenshots/logo_dinsos_2.png" alt="Logo Dinsos" width="600">
 
 Sistem Informasi Santunan Kematian
 
