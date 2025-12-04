@@ -172,5 +172,5 @@ Export Excel (Highlight)
 Aplikasi ini bersifat Private/Internal untuk Dinas Sosial Kota Banjarmasin. Dikembangkan sebagai bagian dari Laporan Magang/Kerja Praktik Mahasiswa.
 
 <div align="center">
-Dibuat dengan ❤️ oleh <strong>[Nama Kamu]</strong>
+Dibuat dengan ❤️ oleh <strong>Yusni</strong>
 </div>
