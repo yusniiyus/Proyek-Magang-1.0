@@ -1,61 +1,176 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="public/images/logo.png" alt="Logo Dinas Sosial" width="120" height="auto" />
+
+Sistem Informasi Santunan Kematian
+
+Dinas Sosial Pemerintah Kota Banjarmasin
+
+<p>
+Digitalisasi Rekapitulasi Data Penerima Santunan Kematian Berbasis Web
+
+
+
+
+untuk Meningkatkan Efisiensi Pelaporan & Transparansi.
 </p>
 
-## About Laravel
+<!-- Badges -->
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p>
+<a href="https://laravel.com"><img src="https://www.google.com/search?q=https://img.shields.io/badge/Laravel-12.x-FF2D20%3Fstyle%3Dfor-the-badge%26logo%3Dlaravel%26logoColor%3Dwhite" alt="Laravel 12"></a>
+<a href="https://php.net"><img src="https://www.google.com/search?q=https://img.shields.io/badge/PHP-8.2%2B-777BB4%3Fstyle%3Dfor-the-badge%26logo%3Dphp%26logoColor%3Dwhite" alt="PHP 8.2"></a>
+<a href="https://mysql.com"><img src="https://www.google.com/search?q=https://img.shields.io/badge/MySQL-Database-4479A1%3Fstyle%3Dfor-the-badge%26logo%3Dmysql%26logoColor%3Dwhite" alt="MySQL"></a>
+<a href="#"><img src="https://www.google.com/search?q=https://img.shields.io/badge/Maintained-Yes-green%3Fstyle%3Dfor-the-badge" alt="Maintained"></a>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<br />
 
-## Learning Laravel
+📖 Tentang Aplikasi
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Sistem ini dirancang untuk mengatasi permasalahan pendataan manual santunan kematian di Dinas Sosial Kota Banjarmasin. Aplikasi ini mendigitalisasi seluruh alur kerja, mulai dari input data pemohon, validasi berkas, hingga pencairan dana per tahapan.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Fitur unggulan sistem ini adalah mekanisme Penguncian Tahapan (Locking Mechanism) dan Rekapitulasi Otomatis (Excel Export) yang memastikan integritas data keuangan negara agar tidak berubah setelah dana dicairkan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+✨ Fitur Unggulan
 
-## Laravel Sponsors
+🔐 Manajemen Tahapan & Keamanan Data
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Siklus Hidup Data Dinamis: Menggunakan status Rekap (Input Data), Proses (Verifikasi), dan Cair (Selesai).
 
-### Premium Partners
+Auto-Locking System: Ketika tahapan diubah menjadi Proses atau Cair, sistem otomatis mengunci tombol Tambah dan Hapus. Data aman dari manipulasi pasca-pencairan.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Validasi Tanggal Cair: Mewajibkan input tanggal pencairan dana saat status diubah menjadi Cair.
 
-## Contributing
+📂 Pengelolaan Data Santunan (CRUD)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Validasi NIK Unik: Mencegah duplikasi data penerima bantuan (Double Entry).
 
-## Code of Conduct
+Dependent Dropdown: Pemilihan Wilayah (Kecamatan -> Kelurahan) secara otomatis dan akurat.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Pencarian Cerdas: Filter data berdasarkan Nama Almarhum, Ahli Waris, atau Kelurahan.
 
-## Security Vulnerabilities
+📊 Pelaporan & Output
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+One-Click Excel Export: Menghasilkan laporan rekapitulasi siap cetak (.xlsx) sesuai format resmi Dinas Sosial.
 
-## License
+Styling Otomatis: Baris tabel otomatis di-highlight (warna hijau) untuk penerima dengan rekening Bank Kalsel Syariah.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Dashboard Statistik: Ringkasan jumlah permohonan per tahapan.
+
+🛡️ Hak Akses (Role-Based)
+
+Administrator: Akses penuh (Manajemen User, Buka/Tutup Tahapan, Hapus Data).
+
+Staff/Operator: Akses terbatas (Input Data, Edit Data, Cetak Laporan).
+
+🛠️ Teknologi yang Digunakan
+
+Backend: Laravel 12 Framework.
+
+Database: MySQL.
+
+Frontend: Blade Templating Engine + Custom CSS (Modern UI).
+
+Library Tambahan:
+
+maatwebsite/excel: Untuk engine export laporan.
+
+sweetalert2: Untuk notifikasi dan konfirmasi interaktif.
+
+poppins-font: Tipografi modern.
+
+🚀 Instalasi & Penggunaan
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal (Localhost):
+
+Prasyarat
+
+PHP >= 8.2
+
+Composer
+
+MySQL
+
+Langkah Instalasi
+
+Clone Repository
+
+git clone [https://github.com/username-kamu/santunan-kematian.git](https://github.com/username-kamu/santunan-kematian.git)
+cd santunan-kematian
+
+
+Install Dependency
+
+composer install
+# Jika ada masalah versi, gunakan:
+composer require maatwebsite/excel -W
+
+
+Konfigurasi Environment
+Salin file .env.example menjadi .env dan atur koneksi database.
+
+cp .env.example .env
+php artisan key:generate
+
+
+Setup Database
+Buat database baru di MySQL (misal: dinsos_santunan), lalu jalankan migrasi.
+
+php artisan migrate
+
+
+Buat Akun Admin (Seeder/Tinker)
+
+php artisan tinker
+
+
+// Di dalam console tinker:
+\App\Models\User::create([
+    'name' => 'Administrator',
+    'email' => 'admin@dinsos.gov.id',
+    'role' => 'admin',
+    'password' => bcrypt('password123')
+]);
+exit
+
+
+Jalankan Server
+
+php artisan serve
+
+
+Buka browser dan akses: http://localhost:8000
+
+📸 Tangkapan Layar (Screenshots)
+
+Dashboard Utama
+<img src="public/screenshots/images/dashboard.png" alt="Dashboard" width="auto" height="auto" />
+
+Manajemen Tahapan
+<img src="public/screenshots/images/tahapan.png" alt="Dashboard" width="auto" height="auto" />
+
+
+
+
+
+Form Input Data
+<img src="public/screenshots/images/permohonan-tambah.png" alt="Dashboard" width="auto" height="auto" />
+Export Excel (Highlight)
+
+
+
+
+
+
+(Note: Ganti path gambar di atas dengan link gambar asli)
+
+📄 Lisensi
+
+Aplikasi ini bersifat Private/Internal untuk Dinas Sosial Kota Banjarmasin. Dikembangkan sebagai bagian dari Laporan Magang/Kerja Praktik Mahasiswa.
+
+<div align="center">
+Dibuat dengan ❤️ oleh <strong>[Nama Kamu]</strong>
+</div>
