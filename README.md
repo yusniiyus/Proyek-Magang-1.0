@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/images/logo.png" alt="Logo Dinas Sosial" width="120" height="auto" />
+<link href="https://dinsos.banjarmasinkota.go.id/favicon.ico" rel="icon" type="image/x-icon">
 
 Sistem Informasi Santunan Kematian
 
