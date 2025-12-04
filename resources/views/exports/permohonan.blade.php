@@ -36,8 +36,8 @@
 
         {{-- HEADER TABEL BARIS 2 (Sub-kolom Bank) --}}
         <tr>
-            <th style="border: 1px solid #000000; background-color: #cccccc; text-align: center; font-weight: bold; vertical-align: middle; width: 20px;">Nama Bank</th>
-            <th style="border: 1px solid #000000; background-color: #cccccc; text-align: center; font-weight: bold; vertical-align: middle; width: 25px;">No. Rekening</th>
+            <th style="border: 1px solid #000000; background-color: #cccccc; text-align: center; font-weight: bold; vertical-align: middle; width: 80px;">Nama Bank</th>
+            <th style="border: 1px solid #000000; background-color: #cccccc; text-align: center; font-weight: bold; vertical-align: middle; width: 120px;">No. Rekening</th>
         </tr>
     </thead>
     <tbody>
