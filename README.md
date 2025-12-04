@@ -1,6 +1,6 @@
 <div align="center">
 
-![Logo Dinas](public/images/logo_dinsos_2.png)
+<img src="screenshots/logo_dinsos_2.png" alt="Logo Dinsos" width="600">
 
 Sistem Informasi Santunan Kematian
 
