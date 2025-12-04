@@ -62,7 +62,7 @@ class PermohonanController extends Controller
             'jenis_bank' => 'required|in:KALSEL,KALSEL SYARIAH',
             'nomor_rekening' => 'required|string',
             'nama_pemilik_rekening' => 'required|string',
-            'catatan' => 'nullable|string', // Hanya Catatan
+            'catatan' => 'nullable|string',
         ]);
 
         // 2. Tambah ID Tahapan

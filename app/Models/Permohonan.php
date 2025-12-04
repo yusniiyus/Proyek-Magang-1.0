@@ -10,11 +10,6 @@ class Permohonan extends Model
 {
     use HasFactory;
 
-    /**
-     * Kolom yang boleh diisi secara massal (mass assignable).
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'tahapan_id',
         'nama_meninggal',
@@ -34,11 +29,24 @@ class Permohonan extends Model
         'jenis_bank',
         'nomor_rekening',
         'nama_pemilik_rekening',
+        'status_permohonan',
+        'catatan',
     ];
 
     /**
+     * Casting tipe data otomatis.
+     * Ini mengubah string tanggal dari database menjadi objek Carbon.
+     */
+    protected function casts(): array
+    {
+        return [
+            'tanggal_lahir' => 'date',
+            'tanggal_kematian' => 'date',
+        ];
+    }
+
+    /**
      * Mendefinisikan relasi "milik-ke".
-     * Satu 'Permohonan' hanya dimiliki oleh satu 'Tahapan'.
      */
     public function tahapan(): BelongsTo
     {
